@@ -1,0 +1,87 @@
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 90px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+
+  section,
+  .section {
+    scroll-margin-top: 66px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  padding-bottom: 60px;
+  position: relative;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0;
+    line-height: 1px;
+    margin: 0;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 120px;
+      height: 1px;
+      display: inline-block;
+      background: var(--accent-color);
+      margin: 4px 10px;
+    }
+  }
+
+  p {
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--heading-font);
+  }
+}
+
+@import './sections/_hero.scss';
+@import './sections/_about.scss';
+@import './sections/_services.scss';
+@import './sections/_portfolio-2.scss';
+@import './sections/_faq.scss';
+@import './sections/_team.scss';
+@import './sections/_clients.scss';
+@import './sections/_call-to-action.scss';
+@import './sections/_portfolio-details.scss';
+@import './sections/_service-details.scss';
+@import './sections/_starter-section.scss';
+@import './sections/_about-2.scss';
+@import './sections/_about-3.scss';
+@import './sections/_about-4.scss';
+@import './sections/_about-5.scss';
+@import './sections/_campus-facilities.scss';
+@import './sections/_campus-facilities-2.scss';
+@import './sections/_hero-2.scss';
+@import './sections/_students-life.scss';
+@import './sections/_featured-courses.scss';
+@import './sections/_destinations.scss';
+@import './sections/_pagination-2.scss';
+@import './sections/_blog-details.scss';
+@import './sections/_blog-section.scss';
+@import './sections/_blog-details-2.scss';
+@import './sections/_blog-section-2.scss';
+@import './sections/_chefs.scss';
+@import './sections/_gallery.scss';
+@import './sections/_instructor-profile.scss';
+@import './sections/_students-life-2.scss';
+@import './sections/_gallery-2.scss';

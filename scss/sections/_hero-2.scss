@@ -1,0 +1,231 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Hero 2 Section
+--------------------------------------------------------------*/
+.hero-2 {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+
+  .hero-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/education/showcase-1.webp') center/cover no-repeat;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--contrast-color);
+    padding: 120px 20px;
+    position: relative;
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+
+      h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: var(--contrast-color);
+
+        @media (max-width: 768px) {
+          font-size: 2.5rem;
+        }
+      }
+
+      p {
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+
+        @media (max-width: 768px) {
+          font-size: 1.1rem;
+        }
+      }
+
+      .cta-buttons {
+        margin-bottom: 30px;
+
+        a {
+          display: inline-block;
+          padding: 12px 30px;
+          margin: 0 10px;
+          border-radius: 50px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          transition: all 0.3s ease;
+
+          @media (max-width: 576px) {
+            display: block;
+            margin: 10px auto;
+            max-width: 200px;
+          }
+        }
+
+        .btn-apply {
+          background-color: var(--accent-color);
+          color: var(--contrast-color);
+
+          &:hover {
+            background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          }
+        }
+
+        .btn-tour {
+          background-color: transparent;
+          color: var(--contrast-color);
+          border: 2px solid var(--contrast-color);
+
+          &:hover {
+            background-color: var(--contrast-color);
+            color: var(--heading-color);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+
+      .announcement {
+        background-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+        border-radius: 8px;
+        padding: 15px 20px;
+        display: inline-flex;
+        align-items: center;
+
+        .announcement-badge {
+          background-color: var(--accent-color);
+          color: var(--contrast-color);
+          padding: 5px 10px;
+          border-radius: 4px;
+          font-size: 0.8rem;
+          font-weight: 700;
+          margin-right: 15px;
+          text-transform: uppercase;
+        }
+
+        p {
+          margin: 0;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .highlights-container {
+    margin-top: -70px;
+    position: relative;
+    z-index: 10;
+
+    .highlight-item {
+      background-color: var(--surface-color);
+      border-radius: 8px;
+      padding: 30px 25px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: all 0.3s ease;
+      height: 100%;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      }
+
+      .icon {
+        font-size: 2.5rem;
+        height: 70px;
+        width: 70px;
+        line-height: 70px;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--accent-color);
+        background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 15px;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 0.95rem;
+        margin-bottom: 0;
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+      }
+    }
+  }
+
+  .event-banner {
+    background-color: color-mix(in srgb, var(--heading-color), transparent 90%);
+    padding: 25px 0;
+    margin-top: 40px;
+
+    .event-date {
+      background-color: var(--accent-color);
+      color: var(--contrast-color);
+      text-align: center;
+      border-radius: 8px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+
+      .month {
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .day {
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 1.2;
+      }
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+
+    .btn-register {
+      background-color: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-weight: 600;
+      display: inline-block;
+      text-align: center;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+        transform: translateY(-3px);
+      }
+
+      @media (max-width: 768px) {
+        margin-top: 15px;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      text-align: center;
+
+      .event-date {
+        margin: 0 auto 15px;
+        max-width: 100px;
+      }
+    }
+  }
+}
